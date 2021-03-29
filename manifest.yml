@@ -1,0 +1,18 @@
+---
+applications:
+# -----------------------------------------------------------------------------------
+# Backend Service
+# -----------------------------------------------------------------------------------
+- name: scp-nodejs-getrealtimecurrency
+  path: app
+  instances: 1
+  memory: 1024M
+  routes:
+    - route: scp-nodejs-getrealtimecurrency.cfapps.eu10.hana.ondemand.com
+  buildpack: nodejs_buildpack
+  env:
+    SESSION_TIMEOUT: 10
+    REQUEST_TRACE: true
+    SAP_JWT_TRUST_ACL: '[{"clientid" : "*", "identityzone" : "*"}]'
+  services:
+    - app-logs

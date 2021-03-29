@@ -1,0 +1,33 @@
+{
+  "name": "desafio-inetum",
+  "version": "1.0.0",
+  "description": "desafio entrevista",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silasd23/desafio-inetum.git"
+  },
+  "author": "silas costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silasd23/desafio-inetum/issues"
+  },
+  "homepage": "https://github.com/silasd23/desafio-inetum#readme",
+  "dependencies": {
+    "@sap/xsenv": "^3.1.0",
+    "@sap/xssec": "^3.1.2",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cfenv": "^1.2.3",
+    "express": "^4.17.1",
+    "form-data": "^4.0.0",
+    "nodejs-currency-converter": "^1.0.2",
+    "odata-parser": "^1.4.1",
+    "passport": "^0.4.1"
+  }
+}
